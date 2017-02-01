@@ -1,0 +1,345 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="http://cdn.mobileads.com/css/rma_style.css">
+        <link rel="stylesheet" href="http://cdn.mobileads.com/css/twitter_studio.css">
+        <link rel="stylesheet" href="http://cdn.mobileads.com/css/templates/300x250-theme-2.css">
+        <link rel="stylesheet" type="text/css" href="http://cdn.mobileads.com/css/leadGen.css?20170117065936">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="http://cdn.richmediaads.com/images/mobile-ads/logo.png">
+                    </a>
+                    <p class="navbar-text">Ad Creator Test Panel</p>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="col-md-12 row input-container">
+                <div class="form-group">
+                    <label>Paste your javascript file link here.</label>
+                    <input type="text" class="form-control" name="javascript" value="http://panel.mobileads.com/components/sampleComponent.js"/>
+                </div>
+                <div class="form-group">
+                    <label>Object Name</label>
+                    <input type="text" class="form-control" name="object" value="sampleComponent"/>
+                </div>
+                <div class="form-group">
+                    <label> Data</label>
+                    <input type="text" class="form-control" name="data" value="{}"/>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary js-run">Run</button>
+                </div>
+            </div>
+            
+            <div class="container js-loader row loader-container">
+                <img src="images/724.GIF" class="img-responsive" style="margin: 0 auto;"/>
+            </div>
+            
+            <div class="js-panel-container row col-md-12 panel-container input-container">
+                <div class="form-group">
+                    <label> View your data</label>
+                    <textarea class="js-preference-text form-control" disabled></textarea>
+                </div>
+                <div class="form-group">
+                    <select class="form-control js-show-option">
+                        <option value="0">View All</option>
+                        <option value="1">Tab 1</option>
+                        <option value="2">Tab 2</option>
+                        <option value="3">Tab 3</option>
+                        <option value="4">Tab 4</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success js-show">Show</button>
+                </div>
+            </div>
+            
+            <div id="content" class="js-panel-container row col-md-12 panel-container">
+                <div class="col-md-4">
+                    <!-- Tab 1 - Creator -->
+                    <div id="creator-tab1" class="creator-tab">
+                        <div class="propertiesPanel">
+                            <div class="component-container componentAreaBox" id="tab1ComArea" rel="tabpanel1">
+                                <div class="plugablePanel component-container" rel="tab1" style=""> 
+                                    <div id="plugablePanel-container">
+                                        <div class="component-header" style="width:100%;"> 
+                                            <div style="float:left;"> 
+                                                <div class="component-description"> You are currently editing </div> 
+                                                <div class="choice-name tabname" rel="tab1">Hosted Video Tab</div> 
+                                            </div> 
+                                            <div style="float:right;"> <div class="header-mini-component exvideoMini"></div> </div> 
+                                        </div> 
+                                        <div class="component-header-nav"> 
+                                            <a title=" Global Settings " class="component-btn backPage apply-btn-mini-icon"></a> 
+                                            <a title=" Preview Ad " class="preview-btn preview-btn-mini-icon"></a> 
+                                            <a title=" Change Component " class="reselect-apps reselect-apps-mini-icon"></a> 
+                                        </div> 
+                                        <div class="innerTinyDivision"> 
+                                            <span> Name This Tab </span> 
+                                            <input type="text" class="tab-label" value="" maxlength=" 30 " style="background-color: rgb(255, 255, 255);"> 
+                                            <img src="http://www.mobileads.com/images/qmark.png" class="tooltipsIcon" rel=" Name This Tab " rel2=" You can rename/edit the tab labels here. examples: Bookings, Reservations, Locations, Sales, etc. "> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 2 - Creator -->
+                    <div id="creator-tab2"  class="creator-tab" style="display:none">
+                        <div class="propertiesPanel">
+                            <div class="component-container componentAreaBox" id="tab1ComArea" rel="tabpanel2">
+                                <div class="plugablePanel component-container" rel="tab2" style=""> 
+                                    <div id="plugablePanel-container">
+                                        <div class="component-header" style="width:100%;"> 
+                                            <div style="float:left;"> 
+                                                <div class="component-description"> You are currently editing </div> 
+                                                <div class="choice-name tabname" rel="tab1">Hosted Video Tab</div> 
+                                            </div> 
+                                            <div style="float:right;"> <div class="header-mini-component exvideoMini"></div> </div> 
+                                        </div> 
+                                        <div class="component-header-nav"> 
+                                            <a title=" Global Settings " class="component-btn backPage apply-btn-mini-icon"></a> 
+                                            <a title=" Preview Ad " class="preview-btn preview-btn-mini-icon"></a> 
+                                            <a title=" Change Component " class="reselect-apps reselect-apps-mini-icon"></a> 
+                                        </div> 
+                                        <div class="innerTinyDivision"> 
+                                            <span> Name This Tab </span> 
+                                            <input type="text" class="tab-label" value="" maxlength=" 30 " style="background-color: rgb(255, 255, 255);"> 
+                                            <img src="http://www.mobileads.com/images/qmark.png" class="tooltipsIcon" rel=" Name This Tab " rel2=" You can rename/edit the tab labels here. examples: Bookings, Reservations, Locations, Sales, etc. "> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 3 - Creator -->
+                    <div id="creator-tab3"  class="creator-tab" style="display:none">
+                        <div class="propertiesPanel">
+                            <div class="component-container componentAreaBox" id="tab1ComArea" rel="tabpanel3">
+                                <div class="plugablePanel component-container" rel="tab3" style=""> 
+                                    <div id="plugablePanel-container">
+                                        <div class="component-header" style="width:100%;"> 
+                                            <div style="float:left;"> 
+                                                <div class="component-description"> You are currently editing </div> 
+                                                <div class="choice-name tabname" rel="tab1">Hosted Video Tab</div> 
+                                            </div> 
+                                            <div style="float:right;"> <div class="header-mini-component exvideoMini"></div> </div> 
+                                        </div> 
+                                        <div class="component-header-nav"> 
+                                            <a title=" Global Settings " class="component-btn backPage apply-btn-mini-icon"></a> 
+                                            <a title=" Preview Ad " class="preview-btn preview-btn-mini-icon"></a> 
+                                            <a title=" Change Component " class="reselect-apps reselect-apps-mini-icon"></a> 
+                                        </div> 
+                                        <div class="innerTinyDivision"> 
+                                            <span> Name This Tab </span> 
+                                            <input type="text" class="tab-label" value="" maxlength=" 30 " style="background-color: rgb(255, 255, 255);"> 
+                                            <img src="http://www.mobileads.com/images/qmark.png" class="tooltipsIcon" rel=" Name This Tab " rel2=" You can rename/edit the tab labels here. examples: Bookings, Reservations, Locations, Sales, etc. "> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tab 4 - Creator -->
+                    <div id="creator-tab4"  class="creator-tab" style="display:none">
+                        <div class="propertiesPanel">
+                            <div class="component-container componentAreaBox" id="tab1ComArea" rel="tabpanel4">
+                                <div class="plugablePanel component-container" rel="tab4" style=""> 
+                                    <div id="plugablePanel-container">
+                                        <div class="component-header" style="width:100%;"> 
+                                            <div style="float:left;"> 
+                                                <div class="component-description"> You are currently editing </div> 
+                                                <div class="choice-name tabname" rel="tab1">Hosted Video Tab</div> 
+                                            </div> 
+                                            <div style="float:right;"> <div class="header-mini-component exvideoMini"></div> </div> 
+                                        </div> 
+                                        <div class="component-header-nav"> 
+                                            <a title=" Global Settings " class="component-btn backPage apply-btn-mini-icon"></a> 
+                                            <a title=" Preview Ad " class="preview-btn preview-btn-mini-icon"></a> 
+                                            <a title=" Change Component " class="reselect-apps reselect-apps-mini-icon"></a> 
+                                        </div> 
+                                        <div class="innerTinyDivision"> 
+                                            <span> Name This Tab </span> 
+                                            <input type="text" class="tab-label" value="" maxlength=" 30 " style="background-color: rgb(255, 255, 255);"> 
+                                            <img src="http://www.mobileads.com/images/qmark.png" class="tooltipsIcon" rel=" Name This Tab " rel2=" You can rename/edit the tab labels here. examples: Bookings, Reservations, Locations, Sales, etc. "> 
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="content" style="margin-top:20px;">
+                        <div id="adBased" style="border-color: rgb(0, 0, 0); z-index: 0; background-image: url(http://www.mobileads.com/images/fullScreenAdsBg-placeholder.jpg); background-color: rgb(119, 115, 116);"> 
+                            <div id="adBody" class="adPreInitHeaderBody"> 
+                                <div id="tab-row"> 
+                                    <div id="tabHolder" style="border-color: rgb(0, 0, 0);">     
+                                        <div class="bodyBottomTabsBased active" rel="tab1" style="border-left-width: 0px; border-right-width: 0px; width: 75px; border-color: rgb(0, 0, 0); font-size: 12px; white-space: nowrap; color: rgb(255, 255, 255); background-color: rgb(119, 115, 116);"><div rel="1" class="tabBar bodyBottomTabs" style="width: 75px; border-color: rgb(0, 0, 0); font-size: 12px; white-space: nowrap; color: rgb(255, 255, 255); background-color: rgb(119, 115, 116);"><div class="tab-text">Tab 1</div></div></div>
+                                        <div class="bodyBottomTabsBased" rel="tab2" style="border-left-width: 1px; border-right-width: 0px; width: 75px; border-color: rgb(0, 0, 0); font-size: 12px; white-space: nowrap; color: rgb(255, 255, 255); background-color: rgb(119, 115, 116);"><div rel="2" class="tabBar bodyBottomTabs" style="width: 75px; border-color: rgb(0, 0, 0); font-size: 12px; white-space: nowrap; color: rgb(255, 255, 255); background-color: rgb(119, 115, 116);"><div class="tab-text">Tab 2</div></div></div>
+                                        <div class="bodyBottomTabsBased" rel="tab3" style="border-left-width: 1px; border-right-width: 0px; width: 75px; border-color: rgb(0, 0, 0); font-size: 12px; white-space: nowrap; color: rgb(255, 255, 255); background-color: rgb(119, 115, 116);"><div rel="3" class="tabBar bodyBottomTabs" style="width: 75px; border-color: rgb(0, 0, 0); font-size: 12px; white-space: nowrap; color: rgb(255, 255, 255); background-color: rgb(119, 115, 116);"><div class="tab-text">Tab 3</div></div></div>
+                                        <div class="bodyBottomTabsBased" rel="tab4" style="border-left-width: 1px; border-right-width: 0px; width: 75px; border-color: rgb(0, 0, 0); font-size: 12px; white-space: nowrap; color: rgb(255, 255, 255); background-color: rgb(119, 115, 116);"><div rel="4" class="tabBar bodyBottomTabs" style="width: 75px; border-color: rgb(0, 0, 0); font-size: 12px; white-space: nowrap; color: rgb(255, 255, 255); background-color: rgb(119, 115, 116);"><div class="tab-text">Tab 4</div></div></div>
+                                    </div> 
+                                    <div class="tabContenr" style="border-color: rgb(0, 0, 0); background-color: rgb(98, 98, 98);"> 
+                                        <div id="tab1" class="contentSlot active first-tab" style="color: rgb(0, 0, 0); font-size: 12px; left:0;">
+                                            <img src="http://www.mobileads.com/images/templates/300x250/insert_image.jpg" width="100%" height="100%">
+                                        </div> 
+                                        <div id="tab2" class="contentSlot" style="overflow: hidden; color: rgb(0, 0, 0); font-size: 12px; left:0; display: none;">
+                                            <img src="http://www.mobileads.com/images/templates/300x250/insert_image.jpg" width="100%" height="100%">
+                                        </div> 
+                                        <div id="tab3" class="contentSlot" style="overflow: hidden; color: rgb(0, 0, 0); font-size: 12px; left:0; display: none;">
+                                            <img src="http://www.mobileads.com/images/templates/300x250/insert_image.jpg" width="100%" height="100%">
+                                        </div> 
+                                        <div id="tab4" class="contentSlot" style="overflow: hidden; color: rgb(0, 0, 0); font-size: 12px; left:0; display : none;">
+                                            <img src="http://www.mobileads.com/images/templates/300x250/insert_image.jpg" width="100%" height="100%">
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="//cdn.mobileads.com/js/plugins/jquery-ui.min.js"></script>
+        <!-- <script src="https://cdn.mobileads.com/js/creator/madCreator.js"></script> -->
+        <script src="/madCreator.js"></script>
+        <script src="https://cdn.mobileads.com/js/creator/input.js"></script>
+        
+        <script>
+            function loadCss(file) {
+                var link = document.createElement('link');
+                link.rel  = 'stylesheet';
+                link.type = 'text/css';
+                link.href  = file;
+                link.media = 'all';
+                document.getElementsByTagName('head')[0].appendChild(link);
+            }
+
+            function loadJs(file, callback) {
+                var s,r;
+                r = false;
+                s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.src = file;
+                s.onload = s.onreadystatechange = function() {
+                    if ( !r && (!this.readyState || this.readyState == 'complete') ) {
+                      r = true;
+                      if(callback != undefined)
+                        callback();
+                    }
+                };
+                document.getElementsByTagName('head')[0].appendChild(s);
+            }
+            
+            /* Sample Preferences */
+            var preferences = {
+                'tab-1': {componentContent:{26:{data:{component:'',data:{}}}}}, 
+                'tab-2': {componentContent:{26:{data:{component:'',data:{}}}}}, 
+                'tab-3': {componentContent:{26:{data:{component:'',data:{}}}}},  
+                'tab-4': {componentContent:{26:{data:{component:'',data:{}}}}}
+            }; 
+            /* Sample gloablVar */
+            var globalvar = {selectedTab : {'id':'tab-1', 'number' : '1'}} ;
+            var instance = '';
+            var data = {};
+            
+            /* Run the app */
+            $('.js-run').on('click', function () {
+                /* Show Loader */
+                $('.js-loader').show();
+                /* Hide the ad creator */
+                $('.js-panel-container').hide();
+                
+                var link = $('[name=javascript]').val();
+                instance = $('[name=object]').val();
+                data = JSON.parse($('[name=data]').val());
+
+                console.log(data)
+                
+                loadJs(link, loadComponent);
+            });
+            
+            /* Show Preference */
+            $('.js-show').on('click', function () {
+                
+                var opt = $('.js-show-option').val();
+                
+                var pref = JSON.stringify(preferences);
+                if (opt != 0) {
+                    pref = JSON.stringify(preferences['tab-'+opt]);
+                }
+                
+                $('.js-preference-text').html(pref);
+            });
+            
+            /* Load Component */
+            var loadComponent = function () {
+                
+                for (var i = 1; i <= 4; i++) {
+                    var container = $('#creator-tab' + i + ' .plugablePanel');
+                    var content = $('#tab' + i);
+                    
+                    $(container).children('#plugablePanel-container').attr('data-loaded',instance);
+
+                    globalvar.selectedTab.id = 'tab-' + i;
+                    globalvar.selectedTab.number  = i;
+                    
+                    preferences['tab-' + i].componentContent[26].data.component = instance;
+                    
+
+
+                    if (typeof data['tab-' + i] != 'undefined') {
+                        preferences['tab-' + i].componentContent[26].data.data[instance] = data['tab-' + i].componentContent[26].data.data[instance];
+                    } else {
+                        preferences['tab-' + i].componentContent[26].data.data[instance] = {};
+                    }
+
+                    new window[instance] ({
+                        container : container,
+                        tab       : 'tab' + i,
+                        data      : preferences['tab-' + i].componentContent[26].data.data[instance],
+                        content   : content
+                    });  
+
+                    globalvar.selectedTab.id = 'tab-1';
+                    globalvar.selectedTab.number  = '1';
+                }
+                
+                /* Hide Loader */
+                $('.js-loader').hide();
+                /* Show the ad creator */
+                $('.js-panel-container').show();
+            }
+            
+
+            /* Change tab */
+            $('.tabBar').on('click', function () {
+                var rel = $(this).attr('rel');
+                
+                globalvar.selectedTab.id = 'tab-' + rel;
+                globalvar.selectedTab.number  = rel;
+                
+                $('.creator-tab').hide();
+                $('#creator-tab' + rel).show();
+                
+                $('.contentSlot').hide();
+                $('#tab' + rel).show();
+                
+            });
+        </script>
+    </body>
+</html>

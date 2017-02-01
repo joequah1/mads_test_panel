@@ -1,0 +1,30 @@
+body {
+      background: url(http://www.mobileads.com/images/white_label_landing/bg-2.jpg) repeat;
+}
+
+.input-container {
+    padding-top: 15px;
+    border: 1px solid #F1F7F3;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.panel-container {
+      display:none;
+      background-color: white;
+      border: 1px solid #F1F7F3;
+      border-radius: 10px;
+}
+
+.loader-container {
+    display:none;
+    background-color: white;
+    border: 1px solid #F1F7F3;
+    border-radius: 10px;
+}
+
+.navbar-text {
+    color: white !important;
+    font-size: 22px;
+}
